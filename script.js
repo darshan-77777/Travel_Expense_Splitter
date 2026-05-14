@@ -15,6 +15,9 @@ function calculateData(){
   let totalPeople =
     Number(document.getElementById("peopleCount").value);
 
+    let destinationName =
+  document.getElementById("tripPlace").value;
+
   let totalUsedMoney =
     stayExpense + foodExpense + travelExpense;
 
@@ -29,6 +32,9 @@ function calculateData(){
 
   document.getElementById("moneyLeft").textContent =
     "Remaining Amount : ₹" + remainingCash;
+
+    document.getElementById("placeName").textContent =
+  "Destination : " + destinationName;
 }
 
 function changeTheme(){
