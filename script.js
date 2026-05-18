@@ -33,6 +33,9 @@ function calculateData(){
   document.getElementById("moneyLeft").textContent =
     "Remaining Amount : ₹" + remainingCash;
 
+    document.getElementById("dailyExpense").textContent =
+  "Daily Expense : ₹" + expensePerDay.toFixed(2);
+
     document.getElementById("placeName").textContent =
   "Destination : " + destinationName;
 }
